@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { createTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
 import spaceImage from '../assets/images/nasa-Yj1M5riCKk4-unsplash.jpg';
@@ -16,11 +16,14 @@ const useStyles = makeStyles({
   overlay: {
     color: '#FFFFFF',
     justifyContent: 'center',
-    fontFamily: 'Orbitron',
-    fontStyle: 'normal',
-    fontWeight: 'normal',
-    fontSize: '60px',
-    lineHeight: '60px',
+  },
+});
+
+const theme = createTheme({
+  typography: {
+    h2: {
+      fontFamily: '"Orbitron"',
+    },
   },
 });
 
@@ -29,7 +32,9 @@ export default function HomePage() {
   return (
     <div className={classes.mainPageImage}>
       <div className={classes.overlay}>
-        <Typography variant="h2">Welcome to your Journey through Space</Typography>
+        <ThemeProvider theme={theme}>
+          <Typography variant="h2">Welcome to your Journey through Space</Typography>
+        </ThemeProvider>
       </div>
     </div>
   );
