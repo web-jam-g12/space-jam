@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import App from './app';
 import './assets/styles/index.css';
 import { store } from './store';
 
-const theme = createTheme({
+let theme = createTheme({
   typography: {
     h1: {
       fontFamily: '"Orbitron"',
@@ -46,6 +46,7 @@ const theme = createTheme({
     },
   },
 });
+theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
   <Provider store={store}>

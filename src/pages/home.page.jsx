@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link as RouterLink } from 'react-router-dom';
@@ -8,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 import spaceImage from '../assets/images/nasa-Yj1M5riCKk4-unsplash.jpg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   mainPageImage: {
     height: '100vh',
     width: '100vw',
@@ -22,45 +23,57 @@ const useStyles = makeStyles({
   overlay: {
     justifyContent: 'center',
   },
+  container: {
+    paddingTop: theme.spacing(4),
+  },
   test: {
     color: 'white',
   },
-});
+  mainContainer: {
+    height: '80vh',
+  },
+  optionsContainer: {
+    borderRight: '1px solid white',
+    padding: '10px',
+  },
+}));
 
 export default function HomePage() {
   const classes = useStyles();
   return (
     <div className={classes.mainPageImage}>
       <div className={classes.overlay}>
-        <Grid container direction="column" justifyContent="space-between" wrap="nowrap" style={{ width: '90vw', height: '80vh' }}>
-          <Grid item>
-            <Typography variant="h2">Welcome to your Journey through Space</Typography>
-          </Grid>
-          <Slide in="true" direction="left" timeout={{ enter: 2000 }}>
-            <Grid item container direction="column" alignItems="flex-end" style={{ borderRight: '1px solid white', padding: '10px' }}>
-              <Grid item>
-                <Link component={RouterLink} underline="none" to="/">
-                  <Typography variant="h4">Spacecrafts</Typography>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link component={RouterLink} underline="none" to="/">
-                  <Typography variant="h4">Astronauts</Typography>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link component={RouterLink} underline="none" to="/">
-                  <Typography variant="h4">About</Typography>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link component={RouterLink} underline="none" to="/">
-                  <Typography variant="h4">Coming Soon</Typography>
-                </Link>
-              </Grid>
+        <Container className={classes.container}>
+          <Grid container direction="column" justifyContent="space-between" wrap="nowrap" className={classes.mainContainer}>
+            <Grid item>
+              <Typography variant="h2">Welcome to your Journey through Space</Typography>
             </Grid>
-          </Slide>
-        </Grid>
+            <Slide in="true" direction="left" timeout={{ enter: 2000 }}>
+              <Grid item container direction="column" alignItems="flex-end" className={classes.optionsContainer}>
+                <Grid item>
+                  <Link component={RouterLink} underline="none" to="/spacecrafts">
+                    <Typography variant="h4">Spacecrafts</Typography>
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link component={RouterLink} underline="none" to="/">
+                    <Typography variant="h4">Astronauts</Typography>
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link component={RouterLink} underline="none" to="/">
+                    <Typography variant="h4">About</Typography>
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link component={RouterLink} underline="none" to="/">
+                    <Typography variant="h4">Coming Soon</Typography>
+                  </Link>
+                </Grid>
+              </Grid>
+            </Slide>
+          </Grid>
+        </Container>
       </div>
     </div>
   );
