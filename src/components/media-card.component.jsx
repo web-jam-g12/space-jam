@@ -14,6 +14,9 @@ const useStyles = makeStyles(() => ({
   cardMedia: {
     paddingTop: '56.25%', // 16:9
   },
+  cardText: {
+    fontFamily: 'orbitron',
+  },
 }));
 
 export default function MediaCard({ imageUrl, title, link }) {
@@ -22,8 +25,8 @@ export default function MediaCard({ imageUrl, title, link }) {
   return (
     <Card className={classes.container} onClick={() => history.push(link)} variant="outlined">
       <CardMedia className={classes.cardMedia} image={imageUrl} />
-      <CardContent>
-        <Typography className={classes.text} align="center">{title}</Typography>
+      <CardContent className={classes.cardContent}>
+        <Typography className={classes.cardText} variant="subtitle1" align="center">{title}</Typography>
       </CardContent>
     </Card>
   );
