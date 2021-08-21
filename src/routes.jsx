@@ -19,7 +19,7 @@ export default function Routes() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/spacecrafts" component={SpacecraftListPage} />
-        <Route exact path="/ComingSoon" component={ComingSoon} />
+        <Route exact path="/coming-soon" component={ComingSoon} />
         <Route exact path="/spacecrafts/:id" component={SpecificSpacecraftPage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/astronauts" component={AstronautListPage} />
