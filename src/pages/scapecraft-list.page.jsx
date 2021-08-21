@@ -11,12 +11,12 @@ import spaceImage from '../assets/images/nasa-Yj1M5riCKk4-unsplash.jpg';
 
 const useStyles = makeStyles((theme) => ({
   mainPageImage: {
-    height: '100vh',
+    minHeight: '100vh',
     width: '100vw',
     position: 'relative',
     backgroundSize: 'cover',
     textAlign: 'center',
-    backgroundPosition: 'center',
+    backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${spaceImage})`,
   },
@@ -35,7 +35,7 @@ export default function SpacecraftListPage() {
         <Grid container spacing={2} justifyContent="center">
           {/* eslint-disable-next-line camelcase */}
           {data && data.results.map(({ id, name, spacecraft_config }) => (
-            <Grid item key={id} xs={12} sm={6} md={4} lg={2}>
+            <Grid item key={id} xs={6} sm={4} md={3} lg={2}>
               <MediaCard
                 style={{ height: '100%' }}
                 imageUrl={spacecraft_config.image_url}
