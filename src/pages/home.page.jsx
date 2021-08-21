@@ -56,7 +56,7 @@ export default function HomePage() {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link component={RouterLink} underline="none" to="/">
+                  <Link component={RouterLink} underline="none" to="/astronauts">
                     <Typography variant="h4">Astronauts</Typography>
                   </Link>
                 </Grid>
