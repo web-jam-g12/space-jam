@@ -11,12 +11,12 @@ import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(2),
-    width: '100vw',
+    width: '97.5vw',
   },
 }));
 
 export default function Header({
-  text, textColor, lineColor, backLink,
+  text, textColor, lineColor, buttonColor, backLink,
 }) {
   const history = useHistory();
   const classes = useStyles();
@@ -24,8 +24,8 @@ export default function Header({
     <Box className={classes.container} style={{ borderBottom: `1px solid ${lineColor}` }}>
       <Grid container spacing={4} justifyContent="flex-start" alignItems="center">
         <Grid item>
-          <IconButton color="action" aria-label="back" component="span" onClick={() => history.push(backLink)}>
-            <ArrowBackIcon color="action" fontSize="large" />
+          <IconButton aria-label="back" component="span" onClick={() => history.push(backLink)}>
+            <ArrowBackIcon fontSize="large" style={{ color: buttonColor }} />
           </IconButton>
         </Grid>
         <Grid item>
@@ -41,9 +41,11 @@ Header.propTypes = {
   textColor: PropTypes.string,
   backLink: PropTypes.string.isRequired,
   lineColor: PropTypes.string,
+  buttonColor: PropTypes.string,
 };
 
 Header.defaultProps = {
   textColor: 'white',
   lineColor: 'white',
+  buttonColor: 'white',
 };
