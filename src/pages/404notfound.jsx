@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   mainPageImage: {
-    height: '100vh',
+    minHeight: '100vh',
     width: '100vw',
     position: 'relative',
     backgroundSize: 'cover',
