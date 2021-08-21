@@ -1,8 +1,9 @@
 <div align="center">
   <h1>🌎 CCC WebJam 21-I</h1>
-
-  <a href="https://github.com/web-jam-g12/space-jam#-project">Submission</a> ·
-  <a href="https://github.com/web-jam-g12/space-jam#-submission">Images</a> ·
+  
+  <a href="https://github.com/web-jam-g12/space-jam#-project">Project</a> ·
+  <a href="https://github.com/web-jam-g12/space-jam#-submission">Submission</a> ·
+  <a href="https://github.com/web-jam-g12/space-jam#-images">Images</a> ·
   <a href="https://github.com/web-jam-g12/space-jam#-team">Team</a> ·
   <a href="https://github.com/web-jam-g12/space-jam#%EF%B8%8F-technologies">Technologies</a> ·
   <a href="https://github.com/web-jam-g12/space-jam#-comments">Comments</a>
