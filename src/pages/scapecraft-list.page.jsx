@@ -9,7 +9,7 @@ export default function SpacecraftListPage() {
   const { data } = useGetSpacecraftsListQuery();
   return (
     <>
-      <Header text="Choose your Spacecraft" textColor="black" backLink="/" />
+      <Header text="Choose your Spacecraft" textColor="black" lineColor="black" backLink="/" />
       <Container>
         <Grid container spacing={2}>
           {/* eslint-disable-next-line camelcase */}
