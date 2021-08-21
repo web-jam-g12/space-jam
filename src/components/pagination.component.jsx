@@ -17,7 +17,9 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Pagination({ min, max, onChange }) {
+export default function Pagination({
+  min, max, onChange,
+}) {
   const [page, setPage] = useState(parseInt(min, 10));
   const classes = useStyles();
 
@@ -30,7 +32,7 @@ export default function Pagination({ min, max, onChange }) {
   return (
     <Grid container justifyContent="space-around">
       <Grid item xs={2}>
-        <IconButton onClick={() => setPage(page - 1)}>
+        <IconButton onClick={() => setPage(page - 1)} disabled={page === min}>
           <ChevronLeftIcon style={{ color: 'white' }} />
         </IconButton>
       </Grid>
@@ -45,7 +47,7 @@ export default function Pagination({ min, max, onChange }) {
         </Typography>
       </Grid>
       <Grid item xs={2}>
-        <IconButton onClick={() => setPage(parseInt(page, 10) + 1)}>
+        <IconButton onClick={() => setPage(parseInt(page, 10) + 1)} disabled={page === max}>
           <ChevronRightIcon style={{ color: 'white' }} />
         </IconButton>
       </Grid>
