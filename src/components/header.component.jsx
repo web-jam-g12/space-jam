@@ -1,6 +1,6 @@
 import React from 'react';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
 import PropTypes from 'prop-types';
@@ -21,7 +21,7 @@ export default function Header({
   const history = useHistory();
   const classes = useStyles();
   return (
-    <Box className={classes.container} style={{ borderBottom: `1px solid ${lineColor}` }}>
+    <Container className={classes.container} style={{ borderBottom: `1px solid ${lineColor}` }}>
       <Grid container spacing={4} justifyContent="flex-start" alignItems="center">
         <Grid item>
           <IconButton aria-label="back" component="span" onClick={() => history.push(backLink)}>
@@ -32,7 +32,7 @@ export default function Header({
           <Typography variant="h3" style={{ color: textColor }}>{text}</Typography>
         </Grid>
       </Grid>
-    </Box>
+    </Container>
   );
 }
 

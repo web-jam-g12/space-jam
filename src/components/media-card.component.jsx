@@ -10,6 +10,10 @@ import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles(() => ({
   container: {
     cursor: 'pointer',
+    transition: 'transform .5s ease',
+    '&:hover': {
+      transform: 'scale(1.1)',
+    },
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
