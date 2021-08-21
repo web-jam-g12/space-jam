@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1457364887197-9150188c107b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80)',
   },
   infoGrid: {
-    margin: '2vw',
+    padding: '2vw',
   },
   aboutInfoText: {
     textAlign: 'left',
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
     paddingLeft: '0.5vw',
   },
   gridContainer: {
-    paddingTop: '10%',
+    paddingTop: '8%',
   },
 });
 
