@@ -5,8 +5,11 @@ const astronautsApi = baseApi.injectEndpoints({
     getAstronautList: build.query({
       query: () => 'astronaut',
     }),
+    getAstronautDetail: build.query({
+      query: (id) => `astronaut/${id}/`,
+    }),
   }),
   overrideExisting: false,
 });
 
-export const { useGetAstronautListQuery } = astronautsApi;
+export const { useGetAstronautListQuery, useGetAstronautDetailQuery } = astronautsApi;
