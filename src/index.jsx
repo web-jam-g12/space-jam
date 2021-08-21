@@ -8,6 +8,11 @@ import { store } from './store';
 
 let theme = createTheme({
   typography: {
+    h1: {
+      fontFamily: '"Orbitron"',
+      color: '#FFFFFF',
+      fontSize: '12rem',
+    },
     h2: {
       fontFamily: '"Orbitron"',
       color: '#FFFFFF',
@@ -24,6 +29,20 @@ let theme = createTheme({
         color: '#BE45FF',
         fontSize: '2.6rem',
       },
+    },
+    h5: {
+      fontFamily: '"Orbitron"',
+      color: '#FFFFFF',
+    },
+    body1: {
+      fontFamily: '"Space Mono"',
+      color: '#FFFFFF',
+      fontSize: '1.5rem',
+    },
+    body2: {
+      fontFamily: '"Space Mono"',
+      color: '#FFFFFF',
+      fontSize: '1.25rem',
     },
   },
 });
