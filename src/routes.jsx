@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import AboutPage from './pages/about.page';
 import HomePage from './pages/home.page';
 import SpacecraftListPage from './pages/scapecraft-list.page';
 
@@ -13,6 +14,7 @@ export default function Routes() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/spacecrafts" component={SpacecraftListPage} />
+        <Route exact path="/about" component={AboutPage} />
       </Switch>
     </Router>
   );
