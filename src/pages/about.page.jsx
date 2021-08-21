@@ -33,6 +33,7 @@ const useStyles = makeStyles({
   aboutQuote: {
     textAlign: 'center',
     maxWidth: '70vw',
+    textShadow: '1px 1px 2px black',
   },
   link: {
     paddingLeft: '0.5vw',
@@ -90,7 +91,7 @@ export default function AboutPage() {
         </Grid>
         <Grid container justifyContent="space-evenly" wrap="nowrap" className={classes.gridContainer}>
           <Grid item>
-            <Typography variant="h3" className={classes.aboutQuote} style={{ 'text-shadow': '1px 1px 2px black' }}>
+            <Typography variant="h3" className={classes.aboutQuote}>
               “Space is an inspirational concept that allows you to dream big.”
             </Typography>
             <Typography variant="body2" className={classes.aboutQuote}>
