@@ -18,7 +18,7 @@
 
 **Project Number: 12**
 
-Space Jam allows you to access different information about real spacecrafts and astronauts.
+Space Jam allows you to access different information about real spacecrafts and astronauts, provided by the [Space Devs public API](https://ll.thespacedevs.com/).
 
 ## 🎒 Submission
 
