@@ -22,13 +22,15 @@ export default function Pagination({ min, max, onChange }) {
   const classes = useStyles();
 
   useEffect(() => {
-    onChange(page);
+    if (page >= min && page <= max) {
+      onChange(page);
+    }
   }, [page]);
 
   return (
     <Grid container justifyContent="space-around">
       <Grid item xs="2">
-        <IconButton onClick={() => setPage(page - 1)} disabled={min === page}>
+        <IconButton onClick={() => setPage(page - 1)}>
           <ChevronLeftIcon style={{ color: 'white' }} />
         </IconButton>
       </Grid>
