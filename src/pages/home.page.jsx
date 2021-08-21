@@ -36,6 +36,12 @@ const useStyles = makeStyles((theme) => ({
     borderRight: '1px solid white',
     padding: '10px',
   },
+  gridContainer: {
+    position: 'absolute',
+    bottom: 0,
+    width: '100vw',
+    height: '75vh',
+  },
 }));
 
 export default function HomePage() {
@@ -56,12 +62,12 @@ export default function HomePage() {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link component={RouterLink} underline="none" to="/">
+                  <Link component={RouterLink} underline="none" to="/astronauts">
                     <Typography variant="h4">Astronauts</Typography>
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link component={RouterLink} underline="none" to="/">
+                  <Link component={RouterLink} underline="none" to="/about">
                     <Typography variant="h4">About</Typography>
                   </Link>
                 </Grid>
