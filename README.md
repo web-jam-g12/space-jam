@@ -1,11 +1,11 @@
 <div align="center">
   <h1>🌎 CCC WebJam 21-I</h1>
 
-  <a href="https://github.com/web-jam-g12/space-jam#Project">Submission</a> ·
-  <a href="https://github.com/web-jam-g12/space-jam#Images">Images</a> ·
-  <a href="https://github.com/web-jam-g12/space-jam#Team">Team</a> ·
-  <a href="https://github.com/web-jam-g12/space-jam#Technologies">Technologies</a> ·
-  <a href="https://github.com/web-jam-g12/space-jam#Comments">Comments</a>
+  <a href="https://github.com/web-jam-g12/space-jam#-project">Submission</a> ·
+  <a href="https://github.com/web-jam-g12/space-jam#-submission">Images</a> ·
+  <a href="https://github.com/web-jam-g12/space-jam#-team">Team</a> ·
+  <a href="https://github.com/web-jam-g12/space-jam#%EF%B8%8F-technologies">Technologies</a> ·
+  <a href="https://github.com/web-jam-g12/space-jam#-comments">Comments</a>
 
   <img src="https://img.shields.io/static/v1?label=CCC&message=2021&color=yellow" />
   <img src="https://img.shields.io/static/v1?label=WebJam&message=21-I&color=blue" />
