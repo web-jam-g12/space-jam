@@ -24,8 +24,8 @@ export default function Header({
     <Box className={classes.container} style={{ borderBottom: `1px solid ${lineColor}` }}>
       <Grid container spacing={4} justifyContent="flex-start" alignItems="center">
         <Grid item>
-          <IconButton color="action" aria-label="back" component="span" onClick={() => history.push(backLink)}>
-            <ArrowBackIcon color="action" fontSize="large" style={{ color: buttonColor }} />
+          <IconButton aria-label="back" component="span" onClick={() => history.push(backLink)}>
+            <ArrowBackIcon fontSize="large" style={{ color: buttonColor }} />
           </IconButton>
         </Grid>
         <Grid item>
