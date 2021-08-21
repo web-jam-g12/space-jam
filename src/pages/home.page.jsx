@@ -29,6 +29,13 @@ const useStyles = makeStyles((theme) => ({
   test: {
     color: 'white',
   },
+  mainContainer: {
+    height: '80vh',
+  },
+  optionsContainer: {
+    borderRight: '1px solid white',
+    padding: '10px',
+  },
 }));
 
 export default function HomePage() {
@@ -37,12 +44,12 @@ export default function HomePage() {
     <div className={classes.mainPageImage}>
       <div className={classes.overlay}>
         <Container className={classes.container}>
-          <Grid container direction="column" justifyContent="space-between" wrap="nowrap" style={{ height: '80vh' }}>
+          <Grid container direction="column" justifyContent="space-between" wrap="nowrap" className={classes.mainContainer}>
             <Grid item>
               <Typography variant="h2">Welcome to your Journey through Space</Typography>
             </Grid>
             <Slide in="true" direction="left" timeout={{ enter: 2000 }}>
-              <Grid item container direction="column" alignItems="flex-end" style={{ borderRight: '1px solid white', padding: '10px' }}>
+              <Grid item container direction="column" alignItems="flex-end" className={classes.optionsContainer}>
                 <Grid item>
                   <Link component={RouterLink} underline="none" to="/spacecrafts">
                     <Typography variant="h4">Spacecrafts</Typography>
