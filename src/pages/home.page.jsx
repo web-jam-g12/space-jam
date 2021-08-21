@@ -11,7 +11,7 @@ import spaceImage from '../assets/images/nasa-Yj1M5riCKk4-unsplash.jpg';
 
 const useStyles = makeStyles((theme) => ({
   mainPageImage: {
-    height: '100vh',
+    minHeight: '100vh',
     width: '100vw',
     position: 'relative',
     backgroundSize: 'cover',

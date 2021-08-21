@@ -7,7 +7,7 @@ import Header from '../components/header.component';
 
 const useStyles = makeStyles({
   mainPageImage: {
-    height: '100vh',
+    minHeight: '100vh',
     width: '100vw',
     position: 'relative',
     backgroundSize: 'cover',
