@@ -5,8 +5,11 @@ const spacecraftsApi = baseApi.injectEndpoints({
     getSpacecraftsList: build.query({
       query: () => 'spacecraft',
     }),
+    getSpacecraftDetail: build.query({
+      query: (id) => `spacecraft/${id}/`,
+    }),
   }),
   overrideExisting: false,
 });
 
-export const { useGetSpacecraftsListQuery } = spacecraftsApi;
+export const { useGetSpacecraftsListQuery, useGetSpacecraftDetailQuery } = spacecraftsApi;
