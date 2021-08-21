@@ -45,7 +45,7 @@ export default function HomePage() {
             <Typography variant="h2">Welcome to your Journey through Space</Typography>
           </Grid>
           <Slide in="true" direction="left" timeout={{ enter: 2000 }}>
-            <Grid item container direction="column" alignItems="flex-end">
+            <Grid className={classes.optionsContainer} item container direction="column" alignItems="flex-end">
               <Grid item>
                 <Link component={RouterLink} underline="none" to="/">
                   <Typography variant="h4">Spacecrafts</Typography>
