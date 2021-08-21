@@ -10,7 +10,6 @@ import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles(() => ({
   container: {
     cursor: 'pointer',
-    position: 'relative',
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
@@ -21,7 +20,7 @@ export default function MediaCard({ imageUrl, title, link }) {
   const history = useHistory();
   const classes = useStyles();
   return (
-    <Card className={classes.container} onClick={() => history.push(link)}>
+    <Card className={classes.container} onClick={() => history.push(link)} variant="outlined">
       <CardMedia className={classes.cardMedia} image={imageUrl} />
       <CardContent>
         <Typography className={classes.text} align="center">{title}</Typography>
