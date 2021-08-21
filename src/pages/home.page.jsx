@@ -39,7 +39,7 @@ export default function HomePage() {
           <Slide in="true" direction="left" timeout={{ enter: 2000 }}>
             <Grid item container direction="column" alignItems="flex-end" style={{ borderRight: '1px solid white', padding: '10px' }}>
               <Grid item>
-                <Link component={RouterLink} underline="none" to="/">
+                <Link component={RouterLink} underline="none" to="/spacecrafts">
                   <Typography variant="h4">Spacecrafts</Typography>
                 </Link>
               </Grid>
