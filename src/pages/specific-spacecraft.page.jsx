@@ -45,7 +45,7 @@ export default function SpecificSpacecraftPage() {
       <div className={classes.imageContainer} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${data?.spacecraft_config.image_url})` }}>
         <Header text={data?.name} textColor="#BE45FF" lineColor="white" buttonColor="white" backLink="/spacecrafts" />
         <Container>
-          <Box pt={6}>
+          <Box pt={6} pb={3}>
             <Grid container>
               <Grid className={classes.informationContainer} container item direction="column" justifyContent="space-between" wrap="nowrap" alignItems="flex-start" xs={12} md={6}>
                 <Grid item>
