@@ -55,7 +55,7 @@ export default function SpecificAstronautPage() {
       <div className={classes.imageContainer} style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1670&q=80)' }}>
         <Header text={data?.name} textColor="#BE45FF" lineColor="white" buttonColor="white" backLink="/astronauts" />
         <Container>
-          <Box pt={6}>
+          <Box pt={6} pb={3}>
             <Grid container>
               <Grid className={classes.profileContainer} container item direction="row" justifyContent="space-between" wrap="nowrap" alignItems="flex-start">
                 <Grid item className={classes.imageProfileContainer}>
