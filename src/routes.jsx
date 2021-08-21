@@ -8,7 +8,7 @@ import AboutPage from './pages/about.page';
 import AstronautListPage from './pages/astronaut-list.page';
 import HomePage from './pages/home.page';
 import NotFound from './pages/404notfound';
-import SpacecraftListPage from './pages/scapecraft-list.page';
+import SpacecraftListPage from './pages/spacecraft-list.page';
 import SpecificSpacecraftPage from './pages/specific-spacecraft.page';
 import SpecificAstronautPage from './pages/specific-astronaut.page';
 

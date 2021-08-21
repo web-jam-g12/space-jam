@@ -3,7 +3,7 @@ import { baseApi } from './base.api';
 const astronautsApi = baseApi.injectEndpoints({
   endpoints: (build) => ({
     getAstronautList: build.query({
-      query: () => 'astronaut',
+      query: (offset) => `astronaut/?offset=${offset}`,
     }),
     getAstronautDetail: build.query({
       query: (id) => `astronaut/${id}/`,

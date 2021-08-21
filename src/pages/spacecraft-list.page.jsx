@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import React, { useState } from 'react';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
@@ -8,7 +7,7 @@ import Header from '../components/header.component';
 import Loading from '../components/loading.component';
 import MediaCard from '../components/media-card.component';
 import Pagination from '../components/pagination.component';
-import { useGetAstronautListQuery } from '../api/astronauts.api';
+import { useGetSpacecraftsListQuery } from '../api/spacecrafts.api';
 
 import spaceImage from '../assets/images/nasa-Yj1M5riCKk4-unsplash.jpg';
 
@@ -34,22 +33,23 @@ const useStyles = makeStyles((theme) => ({
 export default function SpacecraftListPage() {
   const [offset, setOffset] = useState(0);
   const classes = useStyles();
-  const { data, isLoading } = useGetAstronautListQuery(offset);
+  const { data, isLoading } = useGetSpacecraftsListQuery(offset);
 
   return (
     <>
       {isLoading && <Loading />}
       <Box className={classes.mainPageImage}>
-        <Header text="Choose your Astronaut" backLink="/" />
-        <Container className={classes.listContainer}>
+        <Header text="Choose your Spacecraft" backLink="/" />
+        <Container className={classes.listContainer} justifyContent="space-evenly">
           <Grid container spacing={2} justifyContent="center">
-            {data && data.results.map(({ id, name, profile_image_thumbnail }) => (
+            {/* eslint-disable-next-line camelcase */}
+            {data && data.results.map(({ id, name, spacecraft_config }) => (
               <Grid item key={id} xs={6} sm={4} md={3} lg={2}>
                 <MediaCard
                   style={{ height: '100%' }}
-                  imageUrl={profile_image_thumbnail}
+                  imageUrl={spacecraft_config.image_url}
                   title={name}
-                  link={`/astronauts/${id}`}
+                  link={`/spacecrafts/${id}`}
                 />
               </Grid>
             ))}
