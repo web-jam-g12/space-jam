@@ -29,22 +29,22 @@ export default function Pagination({ min, max, onChange }) {
 
   return (
     <Grid container justifyContent="space-around">
-      <Grid item xs="2">
+      <Grid item xs={2}>
         <IconButton onClick={() => setPage(page - 1)}>
           <ChevronLeftIcon style={{ color: 'white' }} />
         </IconButton>
       </Grid>
-      <Grid item xs="2">
+      <Grid item xs={2}>
         <TextField className={classes.field} inputProps={{ className: classes.whiteColor }} color="primary" type="number" variant="outlined" size="small" value={page} onChange={(e) => setPage(e.target.value)} />
       </Grid>
-      <Grid item xs="4">
+      <Grid item xs={4}>
         <Typography>
           of
           {' '}
           {max}
         </Typography>
       </Grid>
-      <Grid item xs="2">
+      <Grid item xs={2}>
         <IconButton onClick={() => setPage(parseInt(page, 10) + 1)}>
           <ChevronRightIcon style={{ color: 'white' }} />
         </IconButton>
