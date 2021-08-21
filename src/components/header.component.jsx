@@ -11,7 +11,7 @@ import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(2),
-    width: '100vw',
+    width: '97.5vw',
   },
 }));
 
