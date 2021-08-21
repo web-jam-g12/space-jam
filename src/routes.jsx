@@ -11,6 +11,7 @@ import NotFound from './pages/404notfound';
 import ComingSoon from './pages/comingSoon';
 import SpacecraftListPage from './pages/spacecraft-list.page';
 import SpecificSpacecraftPage from './pages/specific-spacecraft.page';
+import SpecificAstronautPage from './pages/specific-astronaut.page';
 
 export default function Routes() {
   return (
@@ -22,6 +23,7 @@ export default function Routes() {
         <Route exact path="/spacecrafts/:id" component={SpecificSpacecraftPage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/astronauts" component={AstronautListPage} />
+        <Route exact path="/astronauts/:id" component={SpecificAstronautPage} />
         <Route component={NotFound} />
       </Switch>
     </Router>
